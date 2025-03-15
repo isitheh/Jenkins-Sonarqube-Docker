@@ -13,13 +13,13 @@ Following tutorial: https://chirag0002.hashnode.dev/build-a-cicd-pipeline-using-
 - When all SonarQube tests pass, deploy code to the Docker server.
 - End user will access the code from the Docker server.
   
-### Jenkins
+### Jenkins - EC2 instance
 1. Create Jenkins EC2 AWS Instance. [Ubuntu t2.medium] 
 
-### SonarQube
+### SonarQube - EC2 instance
 1. Create SonarQube EC2 AWS Instance. [Ubuntu t2.medium]
 
-### Docker	
+### Docker - EC2 instance	
 
 ## Steps to cover
 - Create three EC2 instances with a security group allowing traffic from the internet.
