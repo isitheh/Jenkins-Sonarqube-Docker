@@ -7,7 +7,7 @@ CI/CD Pipeline Plan:
 	- When all SonarQube tests pass, deploy code to the Docker server.
 	- End user will access the code from the Docker server.
 ============================== Jenkins ==============================
-1. Create Jenkins EC2 AWS Instance.
+1. Create Jenkins EC2 AWS Instance. [Ubuntu t2.medium]
 2. SSH into Jenkins EC2 AWS Instance.
 3. On terminal navigate to downloads (or where ssh .pem file is stored).
 4. ssh into jenkins instance using its public IP: ssh -i KEY-Jenkins.pem ubuntu@13.58.228.186 (13.58.228.186 - public_ipaddress - 4fca58eafe6d47028c2762e55b019311)
