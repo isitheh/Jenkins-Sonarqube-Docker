@@ -14,7 +14,15 @@ Following tutorial: https://chirag0002.hashnode.dev/build-a-cicd-pipeline-using-
 - End user will access the code from the Docker server.
   
 ### Jenkins - EC2 instance
-1. Create Jenkins EC2 AWS Instance. [Ubuntu t2.medium] 
+1. Create Jenkins EC2 AWS Instance. [Ubuntu t2.medium]
+2. chmod 400 "KEY-Jenkins.pem" in cmd/git where KEY-Jenkins.pem is.
+3. ssh -i "KEY-Jenkins.pem" ubuntu@ec2-3-15-33-214.us-east-2.compute.amazonaws.com - terminal now 'ubuntu@jenkins:~$'
+4. Check if Jenkins is intalled in EC2 instance: dpkg -l | grep jenkins then systemctl status jenkins then port sudo netstat -tulnp | grep 8080
+5. Install Jenkins if not installed - sudo apt update then sudo apt install openjdk-11-jre
+6. Now, copy the public IPv4 address of Jenkins
+    - Public IPv4 address found in EC2 instance connect
+    - Paste it into your browser, and put the port number 8080 after it [3.15.33.214:8080]
+    - Login to Jenkins when prompted [isitheh, 01****]
 
 ### SonarQube - EC2 instance
 1. Create SonarQube EC2 AWS Instance. [Ubuntu t2.medium]
