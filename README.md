@@ -29,7 +29,7 @@ Following tutorial: https://chirag0002.hashnode.dev/build-a-cicd-pipeline-using-
 ### SonarQube - EC2 instance
 1. Create SonarQube EC2 AWS Instance. [Ubuntu t2.medium]
 2. chmod 400 "SSH-KEY-SonarQube.pem" in cmd/git where SSH-KEY-SonarQube.pem is.
-3. ssh -i "SSH-KEY-Jenkins.pem" ubuntu@ec2-18-191-133-131.us-east-2.compute.amazonaws.com - terminal now ubuntu@sonarqube:~$
+3. ssh -i "SSH-KEY-SonarQube.pem" ubuntu@ec2-18-191-133-131.us-east-2.compute.amazonaws.com - terminal now ubuntu@sonarqube:~$
 4. Install SonarQube if not installed
     - sudo apt update
     - sudo apt install openjdk-17-jre
